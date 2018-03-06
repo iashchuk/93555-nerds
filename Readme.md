@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Vitalii Iashchuk](https://up.htmlacademy.ru/htmlcss/20/user/93555).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
