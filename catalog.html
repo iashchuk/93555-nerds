@@ -27,47 +27,49 @@
 				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
 						<legend>Стоимость</legend>
-						от 0<input class="visually-hidden" type="range" name="cost" min="0" max="15000" step="1" value="10">до 15 000
+						<label>
+							от 0<input class="visually-hidden" type="range" name="cost" min="0" max="15000" step="1" value="10">до 15 000
+						</label>
 					</fieldset>
 					<fieldset>
 						<legend>Сетка:</legend>
-						<ul>
+						<ul class="grid-filter">
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" checked>
-								Адаптивная
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="check-adaptive" value="adaptive" checked>
+								<label for="check-adaptive">Адаптивная</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories">
-								Фиксированная
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="check-fix" value="fix">
+								<label for="check-fix">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories">
-								Резиновая
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="check-rubber" value="rubber">
+								<label for="check-rubber">Резиновая</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset>
 						<legend>Особенности</legend>
-						<ul>
+						<ul class="features-filter">
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-								Слайдер
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="check-slider" checked>
+								<label for="check-slider">Слайдер</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages">
-								Блок преимуществ
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="check-advantages">
+								<label for="check-advantages">Блок преимуществ</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-								Новости
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="check-news" checked>
+								<label for="check-news">Новости</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
-								Галерея
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="check-gallery">
+								<label for="check-gallery">Галерея</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">
-								Корзина
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="check-cart">
+								<label for="check-cart">Корзина</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -178,12 +180,12 @@
 		<footer class="main-footer">
 			<section class="footer-map">
 				<h2 class="visually-hidden">Карта проезда</h2>
-				<img src="img/map.jpg" width="1440" height="416" alt="Карта проезда">
+				<img src="img/map.jpg" width="1440" height="416" alt="г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8">
 			</section>
 			<ul class="footer-social-links">
-				<li><a href="#" class="footer-vk"></a></li>
-				<li><a href="#" class="footer-facebook"></a></li>
-				<li><a href="#" class="footer-instagram"></a></li>
+				<li><a href="#" class="footer-vk" aria-label="VKontakte"></a></li>
+				<li><a href="#" class="footer-facebook" aria-label="Facebook"></a></li>
+				<li><a href="#" class="footer-instagram" aria-label="Instagram"></a></li>
 			</ul>
 			<div class="offer">
 				<b>Давайте дружить, это выгодно!</b>
@@ -200,7 +202,7 @@
 		<hr>
 		<section class="modal modal-message">
 			<h2 class="section-title">Напишите нам</h2>
-			<span class="modal-close">x</span>
+			<button class="modal-close" type="button">Закрыть</button>
 			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
 				<ul class="sent-message">
 					<li>

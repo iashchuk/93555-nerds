@@ -1,0 +1,562 @@
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+
+    src: url("fonts/roboto.woff2") format("woff2"),
+    url("fonts/roboto.woff") format("woff");
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+
+    src: url("fonts/robotomedium.woff2") format("woff2"),
+    url("fonts/robotomedium.woff") format("woff");
+}
+
+
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+
+    src: url("fonts/robotobold.woff2") format("woff2"),
+    url("fonts/robotobold.woff") format("woff");
+}
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    white-space: nowrap;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    color: #000;
+}
+
+
+
+
+
+a:focus {
+	outline:  2px dotted black;
+
+}
+
+
+input[type="button"]:focus,
+input[type="submit"]:focus {
+	outline:  2px dotted black;
+
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+
+    outline: 1px dotted black;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+.main-header {
+	background-color: #efecdf;
+
+
+
+}
+
+.page-header {
+	outline: 2px dotted black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	outline: 2px dashed red;
+
+}
+
+
+
+.header-logo {
+	width: 160px;
+	outline: 2px dashed green;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 440px;
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	outline: 2px dashed green;
+}
+
+
+
+
+.site-navigation a {
+	color: #000000;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+
+
+}
+
+
+
+.header-cart {
+	width: 160px;
+		text-align: right;
+	outline: 2px dashed green;
+
+}
+
+.header-cart li {
+
+}
+
+.header-cart a {
+
+
+	color: #000000;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+
+
+}
+
+
+
+
+.slider {
+	background-color: #efecdf;
+
+
+
+}
+
+
+.main-slider {
+
+	outline: 2px dashed red;
+}
+
+
+
+.slider-item {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.description-slider {
+
+	width: 400px;
+
+
+	outline: 2px dashed red;
+
+
+
+
+}
+
+
+
+.description-slider h3 {
+
+	color: #000000;
+font-family: Roboto;
+font-size: 55px;
+font-weight: 500;
+line-height: 55px;
+
+}
+
+.description-slider p {
+
+color: #283136;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+}
+
+
+.photo-slider {
+
+		width: 760px;
+		text-align: center;
+
+
+	outline: 2px dashed green;
+
+}
+
+
+
+
+
+
+
+
+
+
+.category {
+
+	display: flex;
+	justify-content: flex-start;
+
+	margin: 0;
+	padding: 0;
+
+	margin-bottom: 120px;
+
+	list-style: none;
+
+	outline: 2px dashed red;
+
+}
+
+
+.category li {
+	width: 300px;
+
+	margin-right: 100px;
+
+	outline: 2px dashed blue;
+}
+
+
+.category li:last-child {
+
+	margin-right: 60px;
+
+
+}
+
+
+.category h2 {
+
+
+color: #000000;
+font-family: Roboto;
+font-size: 24px;
+font-weight: 700;
+line-height: 30px;
+text-transform: uppercase;
+
+}
+
+
+.category p {
+
+
+color: #283136;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+}
+
+
+
+
+
+.our-studio {
+	display: flex;
+	justify-content: space-between;
+
+
+	outline: 2px dashed red;
+
+
+}
+
+
+.description-studio {
+	width: 660px;
+	margin-right: 140px;
+
+	outline: 2px dashed green;
+
+
+}
+
+
+.description-studio h1 {
+	color: #000000;
+font-family: Roboto;
+font-size: 45px;
+font-weight: 500;
+line-height: 45px;
+
+}
+
+
+.description-studio p,
+.description-studio li {
+	color: #283136;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+}
+
+.description-studio .our-job-header {
+
+color: #283136;
+font-family: Roboto;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+font-weight: 500;
+text-transform: uppercase;
+
+
+}
+
+
+
+
+
+.advantages-studio {
+
+	width: 360px;
+
+
+
+	outline: 2px dashed blue;
+
+
+
+}
+
+
+.indicators {
+
+  border-collapse: collapse;
+}
+
+.indicators caption {
+	margin-top: 40px;
+
+	margin-bottom: 50px;
+	color: #000000;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+
+outline: 1px dotted black;
+
+}
+
+
+
+.indicators td {
+
+
+
+padding-right: 25px;
+
+    padding-bottom: 27px;
+
+    text-align: left;
+
+
+	color: #000000;
+font-family: Roboto;
+font-size: 45px;
+font-weight: 700;
+line-height: 45px;
+
+outline: 1px dotted black;
+
+}
+
+.indicators sup {
+	font-size: 24px;
+
+}
+
+.indicators th {
+
+	text-align: left;
+	color: #283136;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+
+outline: 1px dotted black;
+
+}
+
+
+
+
+
+
+.clients {
+
+	display: flex;
+	justify-content: space-between;
+
+
+	margin: 0;
+	padding: 0;
+
+	margin-bottom: 125px;
+
+	list-style: none;
+
+	outline: 2px dashed red;
+
+
+}
+
+
+
+.map {
+    width: 1440px;
+    margin: 0 auto;
+
+    outline: 2px dashed red;
+}
+
+
+.popup-message {
+	display: none;
+}
+
+.our-adress {
+	margin: 0 auto;
+}
+
+
+
+
+
+.social {
+	display: flex;
+	justify-content: flex-start;
+
+	padding: 70px 0;
+
+	outline: 2px dashed red;
+
+}
+
+
+
+.footer-social-links {
+
+		display: flex;
+	justify-content: space-between;
+
+	width: 260px;
+
+
+	margin: 0;
+	padding: 0;
+
+	margin-right: 140px;
+
+
+
+	list-style: none;
+
+	outline: 2px dashed blue;
+
+
+}
+
+
+.offer {
+	width: 560px;
+
+	outline: 2px dashed blue;
+}
+
+
+
+.offer b {
+color: #000000;
+font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 36px;
+}
+
+
+.offer p {
+color: #444444;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+	display: none;
+}

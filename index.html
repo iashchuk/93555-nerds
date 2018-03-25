@@ -6,36 +6,62 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+
+
+
 		<header class="main-header">
-			<a>
-				<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип nerds">
-			</a>
+
+<div class="container">
+	<div class="page-header">
+		<div class="header-logo">
+			<a><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип nerds"></a>
+		</div>
 			<nav class="main-navigation">
 				<ul class="site-navigation">
-					<li><a href="">Студия</a></li>
-					<li><a href="">Клиенты</a></li>
-					<li><a href="">Магазин</a></li>
-					<li><a href="">Контакты</a></li>
-					<li><a href="">Корзина</a></li>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
+		<div class="header-cart">
+			<a>Корзина</a>
+		</div>
+	</div>
+</div>
+		</header>
+
+
+
+
+		<main>
+
 			<section class="slider">
+				<div class="container">
+
+
 				<h2 class="visually-hidden">Наши преимущества</h2>
+
+
+			<div class="main-slider">
 				<div class="slider-item">
 					<div class="description-slider">
 						<h3>Долго, дорого, скрупулезно</h3>
 						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-						<a href="">Узнать больше</a>
+						<a href="#">Узнать больше</a>
 					</div>
 					<div class="photo-slider">
 						<img src="img/slide1.png" width="698" height="413" alt="Слайд 1">
 					</div>
 				</div>
+
+
+	<!--
 				<div class="slider-item">
 					<div class="description-slider">
 						<h3>Любим математику как никто другой</h3>
 						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-						<a href="">Узнать больше</a>
+						<a href="#">Узнать больше</a>
 					</div>
 					<div class="photo-slider">
 						<img src="img/slide2.png" width="663" height="430" alt="Слайд 2">
@@ -50,36 +76,57 @@
 					<div class="photo-slider">
 						<img src="img/slide3.png" width="759" height="411" alt="Слайд 3">
 					</div>
-				</div>
+				</div> -->
+
+			</div>
+</div>
 			</section>
-		</header>
-		<main class="container">
+
+
+<div class="container">
 			<section class="products">
 				<h2 class="visually-hidden">Наши услуги</h2>
 				<ul class="category">
-					<li>
+					<li class="sites">
 						<img src="img/illustration-1.png" width="300" height="146" alt="Изображение категории Веб-сайты">
 						<h2>Веб-сайты</h2>
+						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 						<a href="">Заказать</a>
 					</li>
-					<li>
+					<li class="apps">
 						<img src="img/illustration-2.png" width="300" height="146" alt="Изображение категории Приложения">
 						<h2>Приложения</h2>
+							<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 						<a href="">Заказать</a>
 					</li>
-					<li>
+					<li class="presents">
 						<img src="img/illustration-3.png" width="300" height="146" alt="Изображение категории Презентации">
 						<h2>Презентации</h2>
+							<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 						<a href="">Заказать</a>
 					</li>
 				</ul>
 			</section>
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+
 			<section class="about-us">
 				<h2 class="visually-hidden">О нас</h2>
+
+
+			<div class="our-studio">
 				<div class="description-studio">
 					<h1>Мы - маленькая, но гордая дизайн-студия из Краснодара</h1>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<p>Выполняем заказы на разработку:</p>
+					<p class="our-job-header">Выполняем заказы на разработку:</p>
 					<ul class="our-job">
 						<li>Веб-сайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
@@ -90,12 +137,12 @@
 					<div class="illustration-studio">
 						<img src="img/nerds-illustration.png" width="360" height="208" alt="Фото nerds">
 					</div>
-					<table>
+					<table class="indicators">
 						<caption>С 2004 года любим точность во всем:</caption>
 						<tr>
-							<td>146%</td>
-							<td>100%</td>
-							<td>50%</td>
+							<td>146<sup>%</sup></td>
+							<td>100<sup>%</sup></td>
+							<td>50<sup>%</sup></td>
 						</tr>
 						<tr>
 							<th>Уровень самоотдачи</th>
@@ -104,7 +151,11 @@
 						</tr>
 					</table>
 				</div>
+			</div>
 			</section>
+
+</div>
+		<div class="container">
 			<section class="brands">
 				<h2 class="visually-hidden">Наши клиенты</h2>
 				<ul class="clients">
@@ -114,10 +165,13 @@
 					<li><a href="#"><img src="img/slice-4.png" width="250" height="105" alt="Логотип Mishka Academy"></a></li>
 				</ul>
 			</section>
-		</main>
-		<footer class="main-footer">
-			<section class="footer-map">
+
+		</div>
+
+
+			<section class="map">
 				<h2 class="visually-hidden">Карта проезда</h2>
+				<div class="our-adress">
 				<img src="img/map.jpg" width="1440" height="416" alt="Карта проезда">
 				<div class="popup-message">
 					<h2>Nёrds Design Studio</h2>
@@ -125,7 +179,18 @@
 					<p>Телефон: +7 (812)275-75-75</p>
 					<a href="#">Напишите нам</a>
 				</div>
+			</div>
 			</section>
+
+
+
+
+			</main>
+		<footer class="main-footer">
+
+<div class="container">
+
+		<div class="social">
 			<ul class="footer-social-links">
 				<li><a href="#" class="footer-vk"></a></li>
 				<li><a href="#" class="footer-facebook"></a></li>
@@ -135,8 +200,11 @@
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
+		</div>
+
+		</div>
 		</footer>
-		<hr>
+
 		<section class="modal modal-message">
 			<h2 class="section-title">Напишите нам</h2>
 			<span class="modal-close">x</span>
