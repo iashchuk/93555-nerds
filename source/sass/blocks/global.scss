@@ -1,0 +1,69 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+
+  src: url("fonts/roboto.woff2") format("woff2"),
+  url("fonts/roboto.woff") format("woff");
+}
+
+
+@font-face {
+  font-weight: 500;
+  font-family: "Roboto";
+
+  src: url("fonts/robotomedium.woff2") format("woff2"),
+  url("fonts/robotomedium.woff") format("woff");
+}
+
+
+
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto";
+
+  src: url("fonts/robotobold.woff2") format("woff2"),
+  url("fonts/robotobold.woff") format("woff");
+}
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #000000;
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus {
+  outline: 2px dotted black;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+
+a {
+  text-decoration: none;
+}

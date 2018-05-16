@@ -1,0 +1,98 @@
+.our-studio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-studio {
+  width: 660px;
+  margin-right: 140px;
+}
+
+.description-studio h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  margin-bottom: 33px;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.description-studio p,
+.description-studio li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
+  color: #283136;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.description-studio li {
+  margin-bottom: 24px;
+}
+
+p.our-job-header {
+  margin-bottom: 25px;
+}
+
+.description-studio .our-job-header {
+  color: #283136;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-us {
+  margin-bottom: 99px;
+}
+
+.advantages-studio {
+  width: 360px;
+}
+
+.indicators {
+  border-collapse: collapse;
+}
+
+.indicators caption {
+  margin-top: 34px;
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.indicators td {
+  padding-right: 22px;
+  padding-bottom: 19px;
+  text-align: left;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.indicators sup {
+  font-size: 24px;
+}
+
+.indicators th {
+  text-align: left;
+  color: #283136;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
