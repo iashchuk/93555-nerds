@@ -1,18 +1,20 @@
 @font-face {
   font-weight: 400;
   font-family: "Roboto";
+  font-style: normal;
 
-  src: url("fonts/roboto.woff2") format("woff2"),
-  url("fonts/roboto.woff") format("woff");
+
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
 }
 
 
 @font-face {
   font-weight: 500;
   font-family: "Roboto";
+  font-style: normal;
 
-  src: url("fonts/robotomedium.woff2") format("woff2"),
-  url("fonts/robotomedium.woff") format("woff");
+
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
 }
 
 
@@ -20,9 +22,10 @@
 @font-face {
   font-weight: 700;
   font-family: "Roboto";
+  font-style: normal;
 
-  src: url("fonts/robotobold.woff2") format("woff2"),
-  url("fonts/robotobold.woff") format("woff");
+
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
 }
 
 
@@ -45,10 +48,26 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: normal;
+      min-width: 1200px;
+
 
   color: #000000;
 }

@@ -1,13 +1,59 @@
 .map {
-  width: 1440px;
-  margin: 0 auto;
+  position: relative;
+width: 100%;
+height: 416px;
+padding-top: 55px;
+
 }
 
-.popup-message {
-  display: none;
+
+.map__yandex {
+width: 100%;
+height: 416px;
+position: absolute;
+top: 0;
+
+  border: none;
 }
 
-.our-adress {
-  margin: 0 auto;
+
+.contacts {
+  position: relative;
+  z-index: 2;
+  width: 319px;
+
+
+  padding: 49px 50px 47px;
+  background-color: #fff;
+  
+
+
 }
 
+.contacts__title {
+margin: 0;
+padding: 0;
+margin-bottom: 22px;
+font-weight: 700;
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.contacts__address,
+.contacts__phone {
+  margin: 0;
+  padding: 0;
+
+      margin-bottom: 19px;
+      line-height: 18px;
+      color: #666;
+
+}
+
+
+.contacts__button {
+  width: 219px;
+  margin-top: 17px;
+
+}

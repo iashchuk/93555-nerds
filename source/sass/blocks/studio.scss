@@ -1,0 +1,131 @@
+.studio {
+  margin-bottom: 72px;
+}
+
+.studio__wrapper {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.studio__description {
+  width: 660px;
+
+}
+
+.studio__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  margin-bottom: 33px;
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.studio__principe {
+  margin-bottom: 40px;
+
+color: #283136;
+}
+
+.studio__order {
+  margin: 0;
+  padding: 0;
+
+  color: #283136;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.studio__list {
+   margin: 0;
+   padding: 0;
+  list-style: none;
+}
+.studio__item {
+
+  margin: 0;
+  padding: 0;
+
+  color: #283136;
+  padding: 24px 0 0 36px;
+  color: #283136;
+  background-image: linear-gradient(to right, #fff 1px, transparent 1px, transparent 26px, #fff 26px),
+  linear-gradient(transparent 35px, #fb565a 35px, #fb565a 37px, transparent 37px);
+
+}
+
+.studio__description .our-job-header {
+  color: #283136;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-us {
+  margin-bottom: 99px;
+}
+
+.studio__advantage {
+
+  width: 360px;
+}
+
+.studio__photo {
+  text-align: center;
+  margin-bottom: 37px;
+
+}
+
+.studio__image {
+  display: block;
+}
+
+.studio__table {
+  border-collapse: collapse;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+// INDICATORS
+
+.indicators__caption {
+  width: 100%;
+  margin-bottom: 40px;
+  color: #000000;
+
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.indicators__cell {
+
+  width: 33.3333%;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 18px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.indicators__sign {
+  margin-left: -13px;
+  font-size: 28px;
+}
+
+.indicators__column {
+  text-align: left;
+  color: #283136;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}

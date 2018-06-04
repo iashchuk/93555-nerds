@@ -3,7 +3,7 @@
   margin-bottom: 80px;
 }
 
-.slider-item {
+.slider__item {
   width: 1160px;
   padding-top: 60px;
   padding-bottom: 79px;
@@ -12,7 +12,8 @@
   background-repeat: no-repeat;
 }
 
-.slider-item h3 {
+.slider__title {
+
   width: 380px;
   margin: 0;
   padding: 0;
@@ -23,7 +24,8 @@
   line-height: 55px;
 }
 
-.slider-item p {
+.slider__text {
+
   width: 380px;
   margin: 0;
   padding: 0;
@@ -35,3 +37,9 @@
   font-weight: 400;
   line-height: 24px;
 }
+
+
+.slider__button {
+  width: 240px;
+}
+
