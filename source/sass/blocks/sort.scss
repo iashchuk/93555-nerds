@@ -35,6 +35,24 @@
   text-decoration: none;
 
   opacity: 0.3;
+
+  &:hover[href] {
+    color: #000000;
+
+    opacity: 0.6;
+  }
+
+  &:active[href] {
+    color: #000000;
+
+    opacity: 1;
+  }
+}
+
+.sort__link--active {
+  color: #000000;
+
+  opacity: 1;
 }
 
 .sort__direction {
@@ -45,7 +63,9 @@
   margin-left: auto;
 }
 
+
 .sort__up {
+  display: block;
   width: 0;
   height: 0;
 
@@ -55,10 +75,21 @@
   border-top-width: 0;
   border-bottom-width: 10px;
   border-bottom-color: #cdcdcd;
-  cursor: pointer;
+
+  &:hover[href] {
+    border-bottom-color: #a6a6a6;
+    cursor: pointer;
+  }
+
+
+  &:active[href] {
+    border-bottom-color: #000000;
+    opacity: 1;
+  }
 }
 
 .sort__down {
+  display: block;
   width: 0;
   height: 0;
 
@@ -68,5 +99,23 @@
   border-top-width: 10px;
   border-top-color: #cdcdcd;
   border-bottom-width: 0;
-  cursor: pointer;
+
+  &:hover[href] {
+    border-top-color: #a6a6a6;
+    cursor: pointer;
+  }
+
+  &:active[href] {
+    border-top-color: #000000;
+    opacity: 1;
+  }
+}
+
+
+.sort__down--active {
+  border-top-color: #000000;
+}
+
+.sort__up--active {
+  border-bottom-color: #000000;
 }

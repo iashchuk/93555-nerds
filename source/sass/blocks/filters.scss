@@ -3,7 +3,6 @@
   margin-right: 140px;
 }
 
-
 .filter-cost__title,
 .filter-grid__title,
 .filter-features__title {
@@ -24,7 +23,6 @@
 .filter-cost__title {
   letter-spacing: 1px;
 }
-
 
 .filter-cost__range {
   margin-top: 49px;
@@ -114,7 +112,6 @@
   border-radius: 5px;
 }
 
-
 .filter-grid {
   margin-bottom: 44px;
 }
@@ -142,6 +139,16 @@
   line-height: 20px;
   color: #283136;
 
+  opacity: 0.8;
+
+
+
+  &:hover {
+    color: #000000;
+
+    cursor: pointer;
+    opacity: 1;
+  }
 
   &::after {
     content: "";
@@ -152,8 +159,17 @@
     width: 25px;
     height: 25px;
 
+    color: #000000;
+
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
+    opacity: 0.4;
+   }
+
+  &:hover::after {
+    color: #000000;
+
+    opacity: 1;
   }
 }
 
@@ -162,8 +178,14 @@
 }
 
 .filter-grid__radio:disabled + .filter-grid__label {
+  cursor: default;
   opacity: 0.3;
+
+  &:hover::after {
+    opacity: 0.4;
+  }
 }
+
 
 
 .filter-features {
@@ -195,6 +217,9 @@
   line-height: 20px;
   color: #283136;
 
+  cursor: pointer;
+  opacity: 0.8;
+
   &::after {
     content: "";
     position: absolute;
@@ -206,6 +231,19 @@
 
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+
+  &:hover {
+    color: #000000;
+
+    opacity: 1;
+  }
+
+  &:hover::after {
+    color: #000000;
+
+    opacity: 1;
   }
 }
 
@@ -216,7 +254,6 @@
 .filter-features__checkbox:disabled + .filter-features__label {
   opacity: 0.3;
 }
-
 
 .filter__button {
   width: 260px;
