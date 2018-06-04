@@ -3,66 +3,65 @@
 }
 
 .studio__wrapper {
-
   display: flex;
   justify-content: space-between;
 }
 
 .studio__description {
   width: 660px;
-
 }
 
 .studio__title {
   margin: 0;
-  padding: 0;
   margin-top: 35px;
   margin-bottom: 33px;
-  color: #000000;
-  font-size: 45px;
+  padding: 0;
+
   font-weight: 500;
+  font-size: 45px;
   line-height: 45px;
+  color: #000000;
 }
 
 .studio__principe {
   margin-bottom: 40px;
 
-color: #283136;
+  color: #283136;
 }
 
 .studio__order {
   margin: 0;
   padding: 0;
 
+  font-weight: 700;
   color: #283136;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .studio__list {
-   margin: 0;
-   padding: 0;
-  list-style: none;
-}
-.studio__item {
-
   margin: 0;
   padding: 0;
 
-  color: #283136;
+  list-style: none;
+}
+.studio__item {
+  margin: 0;
+  padding: 0;
   padding: 24px 0 0 36px;
-  color: #283136;
-  background-image: linear-gradient(to right, #fff 1px, transparent 1px, transparent 26px, #fff 26px),
-  linear-gradient(transparent 35px, #fb565a 35px, #fb565a 37px, transparent 37px);
 
+  color: #283136;
+  color: #283136;
+
+  background-image: linear-gradient(to right, #ffffff 1px, transparent 1px, transparent 26px, #ffffff 26px),
+  linear-gradient(transparent 35px, #fb565a 35px, #fb565a 37px, transparent 37px);
 }
 
 .studio__description .our-job-header {
-  color: #283136;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
   color: #000000;
-  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -71,14 +70,13 @@ color: #283136;
 }
 
 .studio__advantage {
-
   width: 360px;
 }
 
 .studio__photo {
-  text-align: center;
   margin-bottom: 37px;
 
+  text-align: center;
 }
 
 .studio__image {
@@ -86,10 +84,11 @@ color: #283136;
 }
 
 .studio__table {
-  border-collapse: collapse;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  border-collapse: collapse;
 }
 
 // INDICATORS
@@ -97,35 +96,33 @@ color: #283136;
 .indicators__caption {
   width: 100%;
   margin-bottom: 40px;
-  color: #000000;
-
 
   font-weight: 700;
-
+  color: #000000;
   text-transform: uppercase;
 }
 
 .indicators__cell {
-
   width: 33.3333%;
+  padding-bottom: 18px;
+
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
   text-align: left;
   color: #000000;
-  padding-bottom: 18px;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 45px;
 }
 
 .indicators__sign {
   margin-left: -13px;
+
   font-size: 28px;
 }
 
 .indicators__column {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   text-align: left;
   color: #283136;
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
 }

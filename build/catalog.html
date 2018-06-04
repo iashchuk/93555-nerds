@@ -26,6 +26,7 @@
     BODY {
       opacity: .5;
     }
+
   </style>
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
   <script src="../node_modules/pixel-glass/script.js"></script> -->
@@ -50,7 +51,7 @@
               <a class="navigation__link" href="#">Клиенты</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current">Магазин</a>
+              <a class="navigation__link navigation__link--shop navigation__link--current">Магазин</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакты</a>
@@ -66,51 +67,62 @@
 
   <main class="page-main">
 
-      <h1 class="page-title">Магазин готовых шаблонов</h1>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
 
     <div class="page-main__wrapper container">
 
-    <aside class="filters">
-      <h2 class="visually-hidden header-filter">Фильтр:</h2>
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <aside class="filters">
+        <h2 class="visually-hidden header-filter">Фильтр:</h2>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
 
-        <div class="filter-cost">
-          <h3 class="filter-cost__title">Стоимость</h3>
-          <div class="filter-cost__controls">
-            <div class="filter-cost__scale">
-              <div class="filter-cost__bar"></div>
+          <div class="filter-cost">
+            <h3 class="filter-cost__title">Стоимость</h3>
+
+            <div class="filter-cost__range">
+
+
+              <div class="filter-cost__controls">
+                <div class="filter-cost__scale">
+                  <div class="filter-cost__bar"></div>
+                </div>
+
+                <div class="filter-cost__toggle filter-cost__toggle--min"></div>
+                <div class="filter-cost__toggle filter-cost__toggle--max"></div>
+              </div>
+
+
+              <div class="filter-cost__price">
+
+                <div class="min-start">
+                  <label class="filter-cost__label">от</label>
+                  <input class="filter-cost__input" type="text" name="min-price" value="0" step="100" min="0">
+                </div>
+
+                <div class="max-start">
+                  <label class="filter-cost__label">до</label>
+                  <input class="filter-cost__input" type="text" name="max-price" value="15000" step="100" min="100">
+                </div>
+              </div>
             </div>
-            <div class="filter-cost__toggle filter-cost__toggle--min"></div>
-            <div class="filter-cost__toggle filter-cost__toggle--max"></div>
-          </div>
-          <div class="filter-cost__block">
-            <label class="filter-cost__label filter-cost__label--from" for="from">от</label>
-            <input class="filter-cost__number filter-cost__number--from" type="number" name="min-price" id="from" value="0" min="0" step="100">
-
-            <label class="filter-cost__label filter-cost__label--to" for="to">до</label>
-            <input class="filter-cost__number filter-cost__number--to" type="number" name="max-price" id="to" value="3000" min="100" step="100">
           </div>
 
-
+          <div class="filter-grid">
+            <h3 class="filter-grid__title">Сетка:</h3>
+            <ul class="filter-grid__list">
+              <li class="filter-grid__item">
+                <input class="filter-grid__radio" type="radio" id="select-adaptive" name="grid" value="adaptive" checked="">
+                <label class="filter-grid__label" for="select-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-grid__item">
+                <input class="filter-grid__radio" type="radio" id="select-fix" name="grid" value="fix">
+                <label class="filter-grid__label" for="select-fix">Фиксированная</label>
+              </li>
+              <li class="filter-grid__item">
+                <input class="filter-grid__radio" type="radio" id="select-fluid" name="grid" value="fluid" disabled="">
+                <label class="filter-grid__label" for="select-fluid">Резиновая</label>
+              </li>
+            </ul>
           </div>
-
-      <div class="filter-grid">
-        <h3 class="filter-grid__title">Сетка:</h3>
-        <ul class="filter-grid__list">
-          <li class="filter-grid__item">
-            <input class="filter-grid__radio" type="radio" id="select-adaptive" name="select-adaptive" checked="">
-            <label class="filter-grid__label" for="select-adaptive">Адаптивная</label>
-          </li>
-          <li class="filter-grid__item">
-            <input class="filter-grid__radio" type="radio" id="select-fix" name="select-fix">
-            <label class="filter-grid__label" for="select-fix">Фиксированная</label>
-          </li>
-          <li class="filter-grid__item">
-            <input class="filter-grid__radio" type="radio" id="select-fluid" name="select-fluid">
-            <label class="filter-grid__label" for="select-fluid">Резиновая</label>
-          </li>
-        </ul>
-      </div>
 
 
           <div class="filter-features">
@@ -138,206 +150,178 @@
               </li>
             </ul>
           </div>
-        <button class="filter__button btn btn--gray" type="submit">Показать</button>
-      </form>
-    </aside>
+          <button class="filter__button btn btn--gray" type="submit">Показать</button>
+        </form>
+      </aside>
 
 
-    <section class="catalog">
+      <section class="catalog">
 
-      <div class="wrapper-sort">
+        <div class="wrapper-sort">
 
-        <div class="catalog__sort sort">
-        <span class="sort__title">Сортировать:</span>
-        <ul class="sort__type">
-          <li class="sort__item">
-            <a class="sort__link" href="#">По цене</a>
-          </li>
-          <li class="sort__item">
-            <a class="sort__link" href="#">По типу</a>
-          </li>
-          <li class="sort__item">
-            <a class="sort__link" href="#">По названию</a>
-          </li>
-        </ul>
-        <div class="sort__direction">
-          <div class="sort__down">
-            <span class="visually-hidden">По убыванию</span>
-          </div>
-          <div class="sort__up">
-            <span class="visually-hidden">По возрастанию</span>
+          <div class="catalog__sort sort">
+            <span class="sort__title">Сортировать:</span>
+            <ul class="sort__type">
+              <li class="sort__item">
+                <a class="sort__link" href="#">По цене</a>
+              </li>
+              <li class="sort__item">
+                <a class="sort__link" href="#">По типу</a>
+              </li>
+              <li class="sort__item">
+                <a class="sort__link" href="#">По названию</a>
+              </li>
+            </ul>
+            <div class="sort__direction">
+              <div class="sort__down">
+                <span class="visually-hidden">По убыванию</span>
+              </div>
+              <div class="sort__up">
+                <span class="visually-hidden">По возрастанию</span>
+              </div>
+
+            </div>
+
           </div>
 
         </div>
 
-      </div>
 
-</div>
+        <ul class="catalog__list">
 
-      <ul class="catalog__list">
-        <li class="catalog-item">
-          <article>
-            <div class="product-header">
-              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-              </svg>
-            </div>
-            <a href="catalog-item.html">
-              <img src="img/item-sedona.png" width="360" height="576" alt="Sedona">
+          <li class="catalog-item product">
+            <a class="product__link" href="catalog-item.html">
+              <img class="product__image" src="img/item-sedona.png" width="360" height="576" alt="Sedona">
             </a>
-            <div class="product-popup">
-              <h1>Sedona</h1>
-              <p>Информационный сайт для туристов</p>
-              <a href="#" class="catalog-item-price">9 900 руб.</a>
+            <div class="product__popup">
+              <h3 class="product__title">Sedona</h3>
+              <p class="product__info">Информационный сайт для туристов</p>
+              <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
-          </article>
-        </li>
-        <li class="catalog-item">
-          <article>
-            <div class="product-header">
-              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-              </svg>
-            </div>
-            <a href="catalog-item.html">
-              <img src="img/item-pink.png" width="360" height="576" alt="Pink App">
+          </li>
+
+          <li class="catalog-item product">
+            <a class="product__link" href="catalog-item.html">
+              <img class="product__image" src="img/item-pink.png" width="360" height="576" alt="Sedona">
             </a>
-            <div class="product-popup">
-              <h1>Pink App</h1>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#" class="catalog-item-price">9 900 руб.</a>
+            <div class="product__popup">
+              <h3 class="product__title">Pink App</h3>
+              <p class="product__info">Pink App</p>
+              <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
-          </article>
-        </li>
-        <li class="catalog-item">
-          <article>
-            <div class="product-header">
-              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-              </svg>
-            </div>
-            <a href="catalog-item.html">
-              <img src="img/item-barbershop.png" width="360" height="576" alt="Barbershop">
+          </li>
+
+          <li class="catalog-item product">
+            <a class="product__link" href="catalog-item.html">
+              <img class="product__image" src="img/item-barbershop.png" width="360" height="576" alt="Sedona">
             </a>
-            <div class="product-popup">
-              <h1>Barbershop</h1>
-              <p>Сайт салона красоты. Для мужчин, да</p>
-              <a href="#" class="catalog-item-price">9 900 руб.</a>
+            <div class="product__popup">
+              <h3 class="product__title">Barbershop</h3>
+              <p class="product__info">Сайт салоны красоты. Для мужчин, да.</p>
+              <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
-          </article>
-        </li>
-        <li class="catalog-item">
-          <article>
-            <div class="product-header">
-              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-              </svg>
-            </div>
-            <a href="catalog-item.html">
-              <img src="img/item-mishka.png" width="360" height="576" alt="Mishka">
+          </li>
+
+          <li class="catalog-item product">
+            <a class="product__link" href="catalog-item.html">
+              <img class="product__image" src="img/item-mishka.png" width="360" height="576" alt="Sedona">
             </a>
-            <div class="product-popup">
-              <h1>Mishka</h1>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#" class="catalog-item-price">9 900 руб.</a>
+            <div class="product__popup">
+              <h3 class="product__title">Mishka</h3>
+              <p class="product__info">Интернет-магазин вязаных игрушек</p>
+              <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
-          </article>
-        </li>
-        <li class="catalog-item">
-          <article>
-            <div class="product-header">
-              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-              </svg>
-            </div>
-            <a href="catalog-item.html">
-              <img src="img/item-aplus.png" width="360" height="576" alt="A plus">
+          </li>
+
+          <li class="catalog-item product">
+            <a class="product__link" href="catalog-item.html">
+              <img class="product__image" src="img/item-aplus.png" width="360" height="576" alt="Sedona">
             </a>
-            <div class="product-popup">
-              <h1>A Plus</h1>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#" class="catalog-item-price">9 900 руб.</a>
+            <div class="product__popup">
+              <h3 class="product__title">A Plus</h3>
+              <p class="product__info">Лендинг курсов повышения квалификации</p>
+              <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
-          </article>
-        </li>
-        <li class="catalog-item">
-          <article>
-            <div class="product-header">
-              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                <path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path>
-              </svg>
-            </div>
-            <a href="catalog-item.html">
-              <img src="img/item-kvast.png" width="360" height="576" alt="Кваст">
+          </li>
+
+          <li class="catalog-item product">
+            <a class="product__link" href="catalog-item.html">
+              <img class="product__image" src="img/item-kvast.png" width="360" height="576" alt="Sedona">
             </a>
-            <div class="product-popup">
-              <h1>Кваст</h1>
-              <p>Промо-сайт производителя кваса</p>
-              <a href="#" class="catalog-item-price">9 900 руб.</a>
+            <div class="product__popup">
+              <h3 class="product__title">Кваст</h3>
+              <p class="product__info">Промо-сайт производителя крафтового кваса</p>
+              <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
-          </article>
-        </li>
-      </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a href="#">1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">Следующая</a>
-        </li>
-      </ul>
-    </section>
+          </li>
+
+
+
+
+
+
+
+
+
+
+        </ul>
+        <ul class="catlog__pagination pagination">
+          <li class="pagination-item pagination-item-current">
+            <a class="pagination__link pagination__link--number pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--number" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--number" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--text" href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
 
 
     </div>
-        <section class="map">
-          <h2 class="visually-hidden">Карта проезда</h2>
-
-          <!-- <img src="img/map.jpg" width="1440" height="416" alt="Карта проезда"> -->
-          <div class="map__yandex" id="map__api"></div>
-
-          <div class="container">
-            <div class="contacts">
-              <h2 class="contacts__title">Nёrds Design Studio</h2>
-              <p class="contacts__address">191186, Санкт-Петербург,
-                <br>ул. Б. Конюшенная, д. 19/8</p>
-              <p class="contacts__phone">тел: +7 (812) 275-75-75</p>
-              <a class="contacts__button btn" href="#">Напишите нам</a>
-            </div>
-          </div>
-        </section>
-  </main>
-
-    <footer class="page-footer">
+    <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <div class="map__yandex" id="map__api"></div>
       <div class="container">
-        <div class="page-footer__wrapper">
-          <ul class="page-footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#"></a>
-            </li>
-            <li>
-              <a class="social__link social__link--insta" href="#"></a>
-            </li>
-          </ul>
-          <div class="page-footer__offer offer">
-            <b class="offer__tagline">Давайте дружить, это выгодно!</b>
-            <p class="offer__discount">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
+        <div class="contacts">
+          <h2 class="contacts__title">Nёrds Design Studio</h2>
+          <p class="contacts__address">191186, Санкт-Петербург,
+            <br>ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__phone">тел: +7 (812) 275-75-75</p>
+          <a class="contacts__button btn" href="#">Напишите нам</a>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
-    <script src="js/map.js"></script>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#"></a>
+          </li>
+          <li>
+            <a class="social__link social__link--insta" href="#"></a>
+          </li>
+        </ul>
+        <div class="page-footer__offer offer">
+          <b class="offer__tagline">Давайте дружить, это выгодно!</b>
+          <p class="offer__discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 
 </body>
 

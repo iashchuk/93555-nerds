@@ -1,28 +1,16 @@
 .catalog {
   width: 760px;
-
 }
-
-.catalog__sort {
-  outline: 1px dashed red;
-}
-
-
-
 
 .catalog__list {
-  outline: 1px dashed red;
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 
-
+  list-style: none;
 }
-
 
 .catalog-item {
   width: 360px;

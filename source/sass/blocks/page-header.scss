@@ -1,6 +1,5 @@
 .page-header {
   background-color: #eeeeee;
-
 }
 
 .page-header__wrapper {
@@ -8,21 +7,19 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 50px;
-  padding-bottom: 11px;
 }
 
 .page-header__logo {
   width: 160px;
 }
 
-.logo__link  {
-
+.logo__link {
   &:hover[href] {
     opacity: 0.8;
   }
 
   &:active[href] {
-  opacity: 0.3;
+    opacity: 0.3;
   }
 }
 
@@ -33,6 +30,7 @@
 .page-header__cart {
   width: 160px;
   margin-top: 26px;
+
   text-align: right;
 }
 
@@ -43,31 +41,38 @@
   align-items: flex-end;
   width: 440px;
   margin: 0;
+  margin-top: 26px;
   padding: 0;
   padding-left: 3px;
-  margin-top: 26px;
+
   list-style: none;
 }
 
 .navigation__link {
-  color: #000000;
-  font-family: Roboto;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 30px;
+  font-family: Roboto;
+  color: #000000;
   text-transform: uppercase;
   &:hover[href] {
     color: #fb565a;
   }
   &:active[href] {
-    opacity: 0.3;
     color: #000000;
+
+    opacity: 0.3;
   }
 }
 
 .navigation__link--current {
   padding-bottom: 5px;
+
   border-bottom: 2px solid #fb565a;
+}
+
+.navigation__link--shop {
+  padding-bottom: 8px;
 }
 
 
@@ -75,16 +80,18 @@
   display: inline-block;
   width: 115px;
   padding-bottom: 0;
-  color: rgba(0, 0, 0, 1);
-  font-family: Roboto;
-  font-size: 16px;
+
   font-weight: 500;
+  font-size: 16px;
   line-height: 30px;
+  font-family: Roboto;
+  vertical-align: baseline;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
+
   background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;
   background-position: 0 45%;
-  vertical-align: baseline;
 }
 
 .cart__link:hover {

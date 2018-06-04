@@ -7,45 +7,42 @@
   display: block;
   width: 360px;
   margin-right: 40px;
-  font-size: 18px;
+
   font-weight: 700;
+  font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
-
-
 }
 
 
 .sort__type {
+  display: flex;
+  justify-content: space-between;
   width: 273px;
-
   margin: 0;
   padding: 0;
 
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
 .sort__link {
-  opacity: 0.3;
-  color: #000000;
-  font-family: Roboto;
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 18px;
+  font-family: Roboto;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
 
+  opacity: 0.3;
 }
 
 .sort__direction {
-  width: 40px;
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
   align-items: center;
-
+  width: 40px;
+  margin-left: auto;
 }
 
 .sort__up {
@@ -53,6 +50,7 @@
   height: 0;
 
   font-size: 0;
+
   border: 5px solid transparent;
   border-top-width: 0;
   border-bottom-width: 10px;
@@ -65,11 +63,10 @@
   height: 0;
 
   font-size: 0;
+
   border: 5px solid transparent;
   border-top-width: 10px;
   border-top-color: #cdcdcd;
   border-bottom-width: 0;
   cursor: pointer;
 }
-
-
