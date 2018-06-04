@@ -1,0 +1,75 @@
+.sort {
+  display: flex;
+  margin-bottom: 53px;
+}
+
+.sort__title {
+  display: block;
+  width: 360px;
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+
+
+}
+
+
+.sort__type {
+  width: 273px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort__link {
+  opacity: 0.3;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+.sort__direction {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  align-items: center;
+
+}
+
+.sort__up {
+  width: 0;
+  height: 0;
+
+  font-size: 0;
+  border: 5px solid transparent;
+  border-top-width: 0;
+  border-bottom-width: 10px;
+  border-bottom-color: #cdcdcd;
+  cursor: pointer;
+}
+
+.sort__down {
+  width: 0;
+  height: 0;
+
+  font-size: 0;
+  border: 5px solid transparent;
+  border-top-width: 10px;
+  border-top-color: #cdcdcd;
+  border-bottom-width: 0;
+  cursor: pointer;
+}
+
+
