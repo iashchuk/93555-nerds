@@ -55,7 +55,8 @@
   font-family: Roboto;
   color: #000000;
   text-transform: uppercase;
-  &:hover[href] {
+  &:hover[href],
+  &:focus {
     color: #fb565a;
   }
   &:active[href] {
@@ -92,10 +93,11 @@
   background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;
   background-position: 0 45%;
-}
 
-.cart__link:hover {
+  &:hover,
+  &:focus {
   color: #fb565a;
+}
 }
 
 .cart__link:active {

@@ -128,7 +128,9 @@
 }
 
 .filter-grid__radio {
-  display: none;
+  &:focus + .filter-grid__label {
+    outline: 2px auto #4d90fe;
+  }
 }
 
 .filter-grid__label {
@@ -164,7 +166,7 @@
     background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
     opacity: 0.4;
-   }
+  }
 
   &:hover::after {
     color: #000000;
@@ -204,9 +206,11 @@
 }
 
 .filter-features__checkbox {
-  display: none;
-
   background-color: #a6a6a6;
+
+  &:focus + .filter-features__label {
+    outline: 2px auto #4d90fe;
+  }
 }
 
 .filter-features__label {

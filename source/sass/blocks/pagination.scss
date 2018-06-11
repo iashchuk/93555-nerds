@@ -25,7 +25,8 @@
 
   background-color: #eeeeee;
 
-  &:hover[href] {
+  &:hover[href],
+  &:focus {
     background-color: #dfdfdf;
   }
 

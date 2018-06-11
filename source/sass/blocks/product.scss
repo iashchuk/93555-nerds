@@ -27,7 +27,8 @@
     transition: 0.8s linear all;
   }
 
-  &:hover > .product__popup {
+  &:hover > .product__popup,
+  &:focus > .product__popup {
     bottom: 0;
 
     opacity: 1;

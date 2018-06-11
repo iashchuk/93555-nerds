@@ -13,7 +13,8 @@
   text-align: center;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
   background-color: #e74246;
   }
 
@@ -27,7 +28,8 @@
 .btn--green {
   background-color: #00ca74;
 
-  &:hover {
+  &:hover,
+  &:focus {
   background-color: #00bc6c;
   }
 
@@ -40,7 +42,8 @@
 .btn--yellow {
   background-color: #efc84a;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #eab534;
   }
 
@@ -58,7 +61,8 @@
 
 
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #dfdfdf;
 
   }

@@ -21,9 +21,7 @@ gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("source/css"))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
@@ -46,10 +44,9 @@ gulp.task("sprite", function () {
 
 /*Post HTML*/
 gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
+  return gulp
+    .src("source/*.html")
+    .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"));
 });
 
