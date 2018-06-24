@@ -1,12 +1,15 @@
 .slider {
+  position: relative;
+
   margin-bottom: 80px;
-background-color: #eeeeee;
-position: relative;
+
+  background-color: #eeeeee;
 }
 
 .slider__item {
+  position: relative;
+
   display: none;
-position: relative;
   width: 1160px;
   padding-top: 71px;
   padding-bottom: 79px;
@@ -16,30 +19,18 @@ position: relative;
   background-position: 430px 9px;
 }
 
-// .slider__item--three,
-// .slider__item--two {
-//   display: none;
-// }
-
-
 .slider__item--two {
-background-image: url("../img/slide2.png");
-background-position: 430px 0;
-
-
+  background-image: url("../img/slide2.png");
+  background-position: 430px 0;
 }
 
 .slider__item--three {
   background-image: url("../img/slide3.png");
   background-position: 400px 0;
-
 }
 
-
-
-
 .slider__title {
-  width: 515px;
+  width: 520px;
   margin: 0;
   padding: 0;
 
@@ -67,36 +58,32 @@ background-position: 430px 0;
   width: 240px;
 }
 
-
-
-
-
-
-
-
-
 .slider-controls {
   position: absolute;
-  left: 733px;
   bottom: 96px;
+  left: 733px;
   z-index: 100;
+
   width: 160px;
   height: 18px;
-  text-align: center;
+
   font-size: 0;
+  text-align: center;
+
   transform: translateX(-50%);
 }
 
 .slider-controls label {
   position: relative;
+
   display: inline-block;
   width: 18px;
   height: 18px;
+  margin: 0 9px;
   padding: 8px;
+
   border-radius: 50%;
   cursor: pointer;
-   margin: 0 9px;
-
 }
 
 .slider-controls label::after {
@@ -104,41 +91,41 @@ background-position: 430px 0;
   position: absolute;
   top: 0;
   left: 200px;
-
   z-index: 1;
+
   width: 18px;
   height: 18px;
+
   background: #ffffff;
   border-radius: 50%;
-
-
 }
 
 
-#product-1:checked~.slider__wrapper .slider__item:nth-child(1) {
+#product-1:checked ~ .slider__wrapper .slider__item:nth-child(1) {
   display: block;
 }
 
-#product-2:checked~.slider__wrapper .slider__item:nth-child(2) {
+#product-2:checked ~ .slider__wrapper .slider__item:nth-child(2) {
   display: block;
 }
 
-#product-3:checked~.slider__wrapper .slider__item:nth-child(3) {
+#product-3:checked ~ .slider__wrapper .slider__item:nth-child(3) {
   display: block;
 }
 
-#product-1:checked~.slider-controls .slider-controls-item--1::before,
-#product-2:checked~.slider-controls .slider-controls-item--2::before,
-#product-3:checked~.slider-controls .slider-controls-item--3::before {
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "55555555555";
   position: absolute;
-  left: 209px;
-
   top: 9px;
+  left: 209px;
   z-index: 20;
+
   width: 8px;
   height: 8px;
   margin: -4px;
+
   background-color: red;
   border: 2px solid #c1c1c1;
   border-radius: 50%;

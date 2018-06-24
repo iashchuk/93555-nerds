@@ -4,29 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>Nerds Catalog</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
   <!-- Pixel Glass -->
   <!-- <style>
     HTML {
       background-repeat: no-repeat;
       background-position: 50% 0;
-
     }
-
     @media ( min-width: 960px) {
       HTML {
         /* Десктопный макет */
         background-image: url("img/catalog.png");
       }
     }
-
     BODY {
       opacity: .5;
     }
-
   </style>
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
   <script src="../node_modules/pixel-glass/script.js"></script> -->
@@ -64,40 +59,27 @@
       </div>
     </div>
   </header>
-
   <main class="page-main">
-
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-
     <div class="page-main__wrapper container">
-
       <aside class="filters">
         <h2 class="visually-hidden header-filter">Фильтр:</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-
           <div class="filter-cost">
             <h3 class="filter-cost__title">Стоимость</h3>
-
             <div class="filter-cost__range">
-
-
               <div class="filter-cost__controls">
                 <div class="filter-cost__scale">
                   <div class="filter-cost__bar"></div>
                 </div>
-
                 <div class="filter-cost__toggle filter-cost__toggle--min"></div>
                 <div class="filter-cost__toggle filter-cost__toggle--max"></div>
               </div>
-
-
               <div class="filter-cost__price">
-
                 <div class="min-start">
                   <label class="filter-cost__label">от</label>
                   <input class="filter-cost__input" type="text" name="min-price" value="0" step="100" min="0">
                 </div>
-
                 <div class="max-start">
                   <label class="filter-cost__label">до</label>
                   <input class="filter-cost__input" type="text" name="max-price" value="15000" step="100" min="100">
@@ -105,7 +87,6 @@
               </div>
             </div>
           </div>
-
           <div class="filter-grid">
             <h3 class="filter-grid__title">Сетка:</h3>
             <ul class="filter-grid__list">
@@ -123,8 +104,6 @@
               </li>
             </ul>
           </div>
-
-
           <div class="filter-features">
             <h3 class="filter-features__title">Особенности</h3>
             <ul class="filter-features__list">
@@ -153,12 +132,8 @@
           <button class="filter__button btn btn--gray" type="submit">Показать</button>
         </form>
       </aside>
-
-
       <section class="catalog">
-
         <div class="wrapper-sort">
-
           <div class="catalog__sort sort">
             <span class="sort__title">Сортировать:</span>
             <ul class="sort__type">
@@ -177,18 +152,12 @@
                 <span class="visually-hidden">По убыванию</span>
               </a>
               <a class="sort__up" href="#">
-                  <span class="visually-hidden">По возрастанию</span>
+                <span class="visually-hidden">По возрастанию</span>
               </a>
-
             </div>
-
           </div>
-
         </div>
-
-
         <ul class="catalog__list">
-
           <li class="catalog-item product">
             <a class="product__link" href="catalog-item.html">
               <img class="product__image" src="img/item-sedona.png" width="360" height="576" alt="Sedona">
@@ -199,7 +168,6 @@
               <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
           </li>
-
           <li class="catalog-item product">
             <a class="product__link" href="catalog-item.html">
               <img class="product__image" src="img/item-pink.png" width="360" height="576" alt="Sedona">
@@ -210,7 +178,6 @@
               <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
           </li>
-
           <li class="catalog-item product">
             <a class="product__link" href="catalog-item.html">
               <img class="product__image" src="img/item-barbershop.png" width="360" height="576" alt="Sedona">
@@ -221,7 +188,6 @@
               <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
           </li>
-
           <li class="catalog-item product">
             <a class="product__link" href="catalog-item.html">
               <img class="product__image" src="img/item-mishka.png" width="360" height="576" alt="Sedona">
@@ -232,7 +198,6 @@
               <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
           </li>
-
           <li class="catalog-item product">
             <a class="product__link" href="catalog-item.html">
               <img class="product__image" src="img/item-aplus.png" width="360" height="576" alt="Sedona">
@@ -243,7 +208,6 @@
               <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
           </li>
-
           <li class="catalog-item product">
             <a class="product__link" href="catalog-item.html">
               <img class="product__image" src="img/item-kvast.png" width="360" height="576" alt="Sedona">
@@ -254,8 +218,6 @@
               <a class="product__button btn" href="#">9 900 руб.</a>
             </div>
           </li>
-
-
         </ul>
         <ul class="catlog__pagination pagination">
           <li class="pagination-item pagination-item-current">
@@ -272,8 +234,6 @@
           </li>
         </ul>
       </section>
-
-
     </div>
     <section class="map">
       <h2 class="visually-hidden">Карта проезда</h2>
@@ -289,7 +249,6 @@
       </div>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">
@@ -311,10 +270,9 @@
       </div>
     </div>
   </footer>
-
+  
   <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
   <script src="js/map.js"></script>
-
 </body>
 
 </html>

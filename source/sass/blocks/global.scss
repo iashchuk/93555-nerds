@@ -6,7 +6,6 @@
   src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
 }
 
-
 @font-face {
   font-weight: 500;
   font-family: "Roboto";
@@ -15,8 +14,6 @@
   src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
 }
 
-
-
 @font-face {
   font-weight: 700;
   font-family: "Roboto";
@@ -24,8 +21,6 @@
 
   src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
 }
-
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
